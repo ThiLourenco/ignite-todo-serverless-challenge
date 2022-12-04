@@ -1,4 +1,4 @@
-# ignite-todo-serverless-challenge
+# Serverless - AWS Node.js Typescript
 
 # 💻 Sobre o desafio
 
@@ -34,3 +34,28 @@ As rotas que deverão existir são:
     Essa rota deve receber o `id` de um usuário pelo `pathParameters` (o mesmo id que foi usado para criar algum *todo*).
 
     A rota deve retornar os *todos* que possuírem o `user_id` igual ao `id` recebido pelos parâmetros.
+
+## 💻 Instalando e executando o projeto
+
+**1.** Clone este repositório 
+```
+git clone git@github.com:ThiLourenco/ignite-todo-serverless-challenge.git
+
+``` 
+**2.** Na raiz do projeto
+```
+cd ignite-challenge-serverless
+``` 
+**3.** Instale as dependências
+```
+yarn install
+```
+**4.** Instale e inicie o dynamoDB
+```
+yarn dynamodb:install
+yarn dynamodb:start
+```
+**5.** Rodando a aplicação
+```
+yarn dev
+```
